@@ -33,7 +33,10 @@
 
 			<nav class="header__navigation">
 				<ul class="header__navigation-list list">
-					<li>
+					<li class="header__navigation-item">
+						<a class="header__navigation-link link selected" href="">Головна</a>
+					</li>
+					<li class="header__navigation-item">
 						<a class="header__navigation-link link" href="">Каталог</a>
 					</li>
 				</ul>
@@ -65,7 +68,7 @@
 
 		<section class="bestseller section">
 			<div class="bestseller__container container">
-				<h2 class="bestseller__title">Хіти продажів</h2>
+				<h2 class="bestseller__title title">Хіти продажів</h2>
 
 				<ul class="bestseller__list list">
 					<li class="bestseller__item">
@@ -114,8 +117,8 @@
 								<p class="card__aftertitle"><span lang="en">CrystalMirror TOP Quality, Clear</span></p>
 								<p class="card__status-instock">В наявності</p>
 								<p class="card__price"><span class="card__price-old"> 457 грн</span>&nbsp 274 грн</p>
-								<div class="card__buttons">
-								</div>
+							</div>
+							<div class="card__buttons">
 								<!-- <button class="btn btn-more" type="button">У кошик</button> -->
 								<button class="btn btn-order" type="button">Замовити</button>
 							</div>
@@ -132,8 +135,8 @@
 								<p class="card__aftertitle"><span lang="en">CrystalMirror TOP Quality, Clear</span></p>
 								<p class="card__status-instock">В наявності</p>
 								<p class="card__price"><span class="card__price-old"> 298 грн</span>&nbsp 149 грн</p>
-								<div class="card__buttons">
-								</div>
+							</div>
+							<div class="card__buttons">
 								<!-- <button class="btn btn-more" type="button">У кошик</button> -->
 								<button class="btn btn-order" type="button">Замовити</button>
 							</div>
@@ -141,14 +144,56 @@
 					</li>
 				</ul>
 
-				<button class="bestseller__btn btn" type="button">Перейти до каталогу</button>
 
+				<div class="bestseller__btn-flexcontainer">
+					<button class="bestseller__btn btn" type="button">Перейти до каталогу &nbsp>>></button>
+					<!-- <a href="./" class="bestseller__link link">Перейти до каталогу &nbsp>>></a> -->
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section instruction">
+			<div class="instruction__container container">
+				<h2 class="instruction__title title">Відео інструкція</h2>
+
+				<div class="instruction__video">
+					<iframe width="720" height="480" src="https://www.youtube.com/embed/ELftT4PSB_w" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
 			</div>
 		</section>
 
 	</main>
 
-	<footer>
+	<footer class="footer section">
+
+		<div class="footer__container container">
+			<a href="./">
+				<img src="./images/logo-white.png" alt="логотип CrystalMirror" width="200">
+			</a>
+			<div class="footer__social">
+				<ul class="footer__social-list list">
+					<li class="footer__social-item">
+						<a href="" class="footer__social-link">
+							<svg class="footer__social-icon">
+								<use href="./images/"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<a href="">
+
+				</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>Copyright &#169 2022, CrystalMirror. Всі права захищенні | <a href="./" class="policy link">Політика
+					конфідаційності</a></p>
+		</div>
 
 	</footer>
 

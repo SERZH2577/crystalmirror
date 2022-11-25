@@ -53,6 +53,11 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -60,9 +65,17 @@ img {
   padding-right: 20px;
 }
 
-.section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--accent-color-text);
+
+  /* text-align: center; */
+  /* text-transform: uppercase; */
+
+  margin-bottom: 40px;
 }
 
 .advert {
@@ -80,14 +93,6 @@ img {
   color: var(--accent-color);
 }
 
-.header__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .btn {
   padding: 10px 20px;
   border: 2px solid var(--accent-color);
@@ -102,6 +107,51 @@ img {
   cursor: pointer;
 }
 
+/* --------------- HEADER --------------- */
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__navigation-list {
+  display: flex;
+}
+
+.header__navigation-item {
+  padding: auto 0;
+}
+
+.header__navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__navigation-link {
+  display: block;
+
+  font-size: 18px;
+  color: #606060;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  transition-property: color;
+}
+
+.header__navigation-link:hover,
+.header__navigation-link:focus {
+  color: var(--accent-color-text);
+}
+
+.selected {
+  /* position: relative; */
+  font-weight: 400;
+  color: var(--accent-color-text);
+}
+
 /* --------------- HERO --------------- */
 
 .hero {
@@ -109,7 +159,10 @@ img {
 
   background-image: url(../images/hero-bg.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  /* background-size: cover; */
+
+  /* margin: auto; */
 }
 
 .hero__container {
@@ -153,16 +206,13 @@ h1 {
 
 /* --------------- BESTSELLER --------------- */
 
+.bestseller {
+  padding-bottom: 0;
+}
+
 .bestseller__title {
-  font-family: Montserrat, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-
-  /* text-align: center; */
-  text-transform: uppercase;
-
-  margin-bottom: 40px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .bestseller__list {
@@ -191,8 +241,14 @@ h1 {
   margin-right: 0;
 }
 
+.bestseller__btn-flexcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .bestseller__btn {
   padding: 20px 40px;
+  margin-left: auto;
 
   border: 1px solid var(--accent-color);
 
@@ -204,6 +260,13 @@ h1 {
   letter-spacing: 0.04em;
 
   cursor: pointer;
+}
+
+.bestseller__link {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--accent-color-text);
 }
 
 /* --------------- CARD --------------- */
@@ -235,7 +298,7 @@ h1 {
 .card__img {
   width: 100%;
   margin-bottom: 15px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #d8d8d8;
   border-radius: 4px;
 }
 
@@ -293,7 +356,6 @@ h1 {
 }
 
 .card__price-old {
-  /* font-family: Montserrat, sans-serif; */
   font-size: 18px;
   font-weight: 300;
   text-decoration: line-through;
@@ -323,4 +385,49 @@ h1 {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
+}
+
+/* --------------- instruction --------------- */
+
+.instruction__title {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* .instruction {
+  background-color: #b1b1b1;
+} */
+
+.instruction__video {
+  display: flex;
+
+  justify-content: center;
+}
+
+/* --------------- FOOTER --------------- */
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 0;
+  color: var(--accent-color-text);
+
+  background-color: var(--secondary-background-color);
+}
+
+.copyright {
+  padding: 5px 0;
+  margin-top: 40px;
+
+  font-size: 15px;
+  font-weight: 300;
+  color: #606060;
+
+  text-align: center;
+  background-color: var(--primary-background-color);
+}
+
+.policy {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--accent-color-text);
 }
