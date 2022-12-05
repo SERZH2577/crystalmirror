@@ -24,13 +24,14 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+ol {
   margin: 0;
 }
 
-img {
+/* img {
   display: block;
-}
+} */
 
 .link {
   text-decoration: none;
@@ -431,16 +432,18 @@ h1 {
 .instruction__content {
   display: flex;
   justify-content: space-between;
+
+  padding: 15px;
+  margin-bottom: 60px;
 }
 
 .instruction__description {
-  margin-right: 40px;
-  padding: 20px 0 20px 15px;
+  margin-right: 60px;
 }
 
 .instruction__description-list {
   font-family: Montserrat, sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -453,16 +456,34 @@ h1 {
 }
 
 .instruction__description-text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
   letter-spacing: 0.02em;
   color: var(--secondary-color-text);
 }
 
-.instruction__video {
-  display: flex;
+.instruction__description-text_star {
+  font-weight: 700;
+  color: var(--accent-color-text);
+}
 
-  justify-content: center;
+.instruction__video {
+  /* padding-top: 10px; */
+  height: 403px;
+
+  border: 10px solid var(--accent-color);
+}
+
+.instruction__description-note {
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--secondary-color-text);
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.instruction__description-note:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* --------------- description --------------- */
@@ -589,6 +610,10 @@ h1 {
   background-color: var(--secondary-background-color);
 }
 
+/* .footer__logo-link {
+  display: block;
+} */
+
 .footer__social {
   margin-top: 40px;
 }
@@ -596,17 +621,75 @@ h1 {
 .footer__social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+/* .footer__social-item { */
+/* width: 40px; */
+/* height: 40px; */
+
+/* border: 1px solid #ffffff;
+  border-radius: 25px; */
+/* } */
 
 .footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
 
+/* .footer__social-link {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+} */
+
 .footer__social-icon {
-  width: 30px;
-  height: 30px;
   fill: #ffffff;
+
+  width: 40px;
+  height: 40px;
+
+  /* border-width: 60px; */
+
+  border: 1px solid #ffffff;
+  border-radius: 25px;
 }
+
+/* .facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.instagram {
+  width: 24px;
+  height: 24px;
+}
+
+.youtube {
+  width: 22px;
+  height: 22px;
+}
+
+.telegram {
+  width: 27px;
+  height: 27px;
+}
+
+.twitter {
+  width: 23px;
+  height: 23px;
+}
+
+.pinterest {
+  width: 23px;
+  height: 23px;
+}
+
+.linkedin {
+  width: 21px;
+  height: 21px;
+} */
 
 .copyright {
   padding: 10px 0;
