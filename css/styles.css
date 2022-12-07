@@ -29,6 +29,11 @@ ol {
   margin: 0;
 }
 
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
 /* img {
   display: block;
 } */
@@ -446,7 +451,7 @@ h1 {
   display: flex;
   justify-content: space-between;
 
-  padding: 15px;
+  padding: 0 15px;
   margin-bottom: 60px;
 }
 
@@ -525,13 +530,13 @@ h1 {
 .description__block-top {
   display: flex;
   justify-content: flex-start;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .description__block-down {
   display: flex;
   justify-content: flex-end;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .description__block-top_list {
@@ -611,6 +616,101 @@ h1 {
   font-size: 15px;
   font-weight: 300;
   /* margin-right: 20px; */
+}
+
+/* --------------- REVIEWS --------------- */
+
+.reviews__title {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.reviews__title-text {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--accent-color-text);
+
+  text-align: end;
+  text-transform: lowercase;
+
+  margin-bottom: 40px;
+}
+
+.reviews__container-content {
+  padding: 0 15px;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 65px;
+}
+
+.reviews__video {
+  width: calc((1200px - 129px) / 3);
+  height: calc(((1200px - 130px) / 3) * 1.8);
+
+  border: 5px solid var(--accent-color);
+  border-radius: 3px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__signature {
+  padding: 15px 40px;
+}
+
+.reviews__signature-title {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.reviews__signature-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #909090;
+}
+
+.name-star__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.name-star__list {
+  display: flex;
+}
+
+.reviews-star__icon {
+  fill: #f3da1b;
+  width: 20px;
+  height: 20px;
+}
+
+.reviews__btn-flexcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reviews__btn {
+  padding: 20px 40px;
+  margin-left: auto;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+
+  color: var(--accent-color-text);
+  background-color: rgba(0, 0, 0, 0);
+
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
 }
 
 /* --------------- FOOTER --------------- */
@@ -720,21 +820,4 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   color: var(--accent-color-text);
-}
-
-.reviews__title {
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.reviews__title-text {
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--accent-color-text);
-
-  text-align: end;
-  text-transform: lowercase;
-
-  margin-bottom: 40px;
 }
