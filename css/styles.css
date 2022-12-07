@@ -172,7 +172,7 @@ ol {
   align-items: center;
 }
 
-.hero__container-text {
+.hero__container-description {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -187,7 +187,17 @@ h1 {
   line-height: 1.6;
   text-transform: uppercase;
   color: var(--secondary-color-text);
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+
+.hero__container-text {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: var(--secondary-color-text);
+
+  margin-bottom: 40px;
 }
 
 .hero__container-btn {
@@ -469,9 +479,9 @@ h1 {
 
 .instruction__video {
   /* padding-top: 10px; */
-  height: 403px;
+  height: 393px;
 
-  border: 10px solid var(--accent-color);
+  border: 5px solid var(--accent-color);
 }
 
 .instruction__description-note {
@@ -563,17 +573,17 @@ h1 {
 
 .description__block-top-icon {
   fill: var(--accent-color);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   /* margin-right: 20px; */
 }
 
-.description__block-down-icon {
+/* .description__block-down-icon {
   fill: var(--accent-color);
   width: 60px;
   height: 60px;
-  /* margin-left: 20px; */
-}
+  margin-left: 20px;
+} */
 
 .description__block-top_item-title {
   font-size: 20px;
