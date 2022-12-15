@@ -125,6 +125,39 @@ iframe {
   padding-bottom: 5px;
 }
 
+.header__menu_block-left {
+  display: flex;
+}
+
+.header__menu_block-right {
+  display: flex;
+}
+
+.header__navigation {
+  margin-left: 60px;
+}
+
+.header__menu_contact {
+  margin-right: 30px;
+}
+
+/* .header__menu_contact-item:not(:last-child) {
+  margin-bottom: 2px;
+} */
+
+.header__menu_contact-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #808080;
+  padding: 2px 0;
+}
+
+.header__menu_contact-icon {
+  fill: var(--accent-color);
+  margin-right: 7px;
+}
+
 .header__navigation-list {
   display: flex;
 }
@@ -140,7 +173,7 @@ iframe {
 .header__navigation-link {
   display: block;
 
-  font-size: 16px;
+  font-size: 14px;
   color: #606060;
 
   padding-top: 12px;
