@@ -25,7 +25,7 @@
 	<header class="header">
 		<div class="advert">
 			<p class="advert__text">При замовленні двох плівок та більше <span class="advert__text-accent">доставка
-					безкоштовна!</span></p>
+					безкоштовна</span>!</p>
 		</div>
 		<div class=" header__menu container">
 
@@ -126,7 +126,7 @@
 		<section class="bestseller section">
 			<div class="bestseller__container container">
 				<h2 class="bestseller__title title">Хіти продажів</h2>
-				<p class="bestseller__title-text">Гідрогелеві плівки є найкращим захистом вашого смартфона</p>
+				<p class="bestseller__title-text">При замовленні двох плівок та більше доставка безкоштовна</p>
 
 				<div class="bestseller__block-card">
 					<ul class="bestseller__list list">
@@ -205,9 +205,10 @@
 					</ul>
 
 
-					<div class="bestseller__btn-flexcontainer">
+					<!-- <div class="bestseller__btn-flexcontainer">
 						<button class="bestseller__btn btn" type="button">Перейти до каталогу</button>
-					</div>
+					</div> -->
+
 				</div>
 			</div>
 		</section>
@@ -217,7 +218,7 @@
 		<section class="description section">
 			<div class="description__container container">
 				<h2 class="description__title title">Опис</h2>
-				<p class="description__title-text">Захищає від ударів, падінь, подряпин та інших екстремальних ситуацій</p>
+				<p class="description__title-text">Захищають від ударів, падінь, подряпин та інших екстремальних ситуацій</p>
 
 				<div class="description__block-top">
 					<img src="./images/description-pack.png" alt="смартфон і пакет для плівки" width="450">
@@ -333,6 +334,32 @@
 						<li class="description__block-top_item">
 							<div>
 								<svg class="description__block-top-icon">
+									<use href="./images/sprite.svg#icon-bubbles"></use>
+								</svg>
+							</div>
+
+							<div class="block-top__item_description">
+								<h3 class="description__block-top_item-title">Самостійно видаляє повітря</h3>
+								<p class="description__block-top_item-text">Завдяки своїм властивостям, за 24 години після поклейки
+									плівка прибирає всі бульбашки</p>
+							</div>
+						</li>
+						<li class="description__block-top_item">
+							<div>
+								<svg class="description__block-top-icon">
+									<use href="./images/sprite.svg#icon-bubbles"></use>
+								</svg>
+							</div>
+
+							<div class="block-top__item_description">
+								<h3 class="description__block-top_item-title">Самостійно видаляє повітря</h3>
+								<p class="description__block-top_item-text">Завдяки своїм властивостям, за 24 години після поклейки
+									плівка прибирає всі бульбашки</p>
+							</div>
+						</li>
+						<li class="description__block-top_item">
+							<div>
+								<svg class="description__block-top-icon">
 									<use href="./images/sprite.svg#icon-like"></use>
 								</svg>
 							</div>
@@ -345,11 +372,17 @@
 						</li>
 					</ul>
 
-					<iframe class="description__video" width="600" height="338" src="https://www.youtube.com/embed/k1jYQMdETvQ"
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-					</iframe>
+					<div class="description__block_down-right">
+						<iframe class="description__video" width="600" height="338" src="https://www.youtube.com/embed/k1jYQMdETvQ"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+
+						<div class="description__btn-flexcontainer">
+							<button class="description__btn btn" type="button">Перейти до каталогу</button>
+						</div>
+					</div>
 
 				</div>
 
@@ -361,7 +394,7 @@
 		<section class="section instruction">
 			<div class="instruction__container container">
 				<h2 class="instruction__title title">Інструкція з поклейки</h2>
-				<p class="instruction__title-text">Гідрогелева плівка по-справжньому збереже ваш смартфон</p>
+				<p class="instruction__title-text">По-справжньому збережуть ваші смартфони</p>
 
 				<div class="instruction__content">
 					<div class="instruction__description">
@@ -426,7 +459,7 @@
 		<section class="section reviews">
 			<div class="reviews__container container">
 				<h2 class="reviews__title title">Відгуки</h2>
-				<p class="reviews__title-text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+				<p class="reviews__title-text">Є найкращим захистом ваших гаджетів</p>
 
 				<div class="reviews__container-content">
 					<ul class="reviews__list list">
@@ -565,7 +598,7 @@
 					</ul>
 
 					<div class="reviews__btn-flexcontainer">
-						<button class="reviews__btn btn" type="button">Перейти до каталогу</button>
+						<button class="reviews__btn btn" type="button">Більше відгуків</button>
 					</div>
 				</div>
 			</div>
@@ -578,48 +611,210 @@
 	<footer class="footer section">
 
 		<div class="footer__container container">
+
 			<a href="./" class="footer__logo-link link">
-				<img src="./images/logo-white.png" alt="логотип CrystalMirror" width="200">
+				<img src="./images/logo-white.png" alt="логотип CrystalMirror" class="footer__logo-img" width="200">
 			</a>
 
-			<div class="footer__social">
-				<ul class="footer__social-list list">
-					<li class="footer__social-item">
-						<a href="https://www.facebook.com/HydrogelCrystalMirror" class="footer__social-link link" target="_blank">
-							<svg class="footer__social-icon facebook">
-								<use href="./images/sprite.svg#icon-facebook"></use>
+
+			<div class="footer__content">
+
+				<!-- FOOTER CONTACTS -->
+
+				<div class="footer__contacts">
+
+					<h3 class="footer__contacts-title">Контакти</h3>
+
+					<address class="footer__contacts-address">
+						65000 <br />
+						вул. Варненьська, 21 <br />
+						м. Одеса
+					</address>
+
+					<div class="footer__contacts-phone">
+
+						<p class="footer__contacts-phone_text">
+							<svg class="footer__contacts-phone_icon" width="14" height="14">
+								<use href="./images/sprite.svg#icon-phone"></use>
 							</svg>
-						</a>
-					</li>
-					<li class="footer__social-item">
-						<a href="https://www.instagram.com/crystalmirror.top" class="footer__social-link link" target="_blank">
-							<svg class="footer__social-icon instagram">
-								<use href="./images/sprite.svg#icon-instagram"></use>
+							096 123 45 67
+						</p>
+
+
+						<p class="footer__contacts-phone_text">
+							<svg class="footer__contacts-phone_icon" width="14" height="14">
+								<use href="./images/sprite.svg#icon-viber"></use>
 							</svg>
-						</a>
-					</li>
-					<li class="footer__social-item">
-						<a href="https://www.youtube.com/@crystalmirror_top" class="footer__social-link link" target="_blank">
-							<svg class="footer__social-icon youtube">
-								<use href="./images/sprite.svg#icon-youtube"></use>
+							063 765 43 21
+						</p>
+
+					</div>
+
+					<div class="footer__contacts-email">
+
+						<a href="mailto:info@crystalmirror.top" class="link footer__contacts-email_link">
+							<svg class="footer__contacts-email_icon" width="14" height="14">
+								<use href="./images/sprite.svg#icon-mail"></use>
 							</svg>
+							info@crystalmirror.top
 						</a>
-					</li>
-					<li class="footer__social-item">
-						<a href="https://telegram.org" class="footer__social-link link" target="_blank">
-							<svg class="footer__social-icon telegram">
-								<use href="./images/sprite.svg#icon-telegram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__social-item">
-						<a href="https://twitter.com" class="footer__social-link link" target="_blank">
-							<svg class="footer__social-icon twitter">
-								<use href="./images/sprite.svg#icon-twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<!-- <li class="footer__social-item">
+
+					</div>
+				</div>
+
+				<!-- FOOTER SUPPORT -->
+
+				<div class="footer__support">
+
+					<h3 class="footer__support-title">Підтримка</h3>
+
+					<ul class="footer__support-list list">
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								<span lang="en">FAQ</span>
+							</a>
+						</li>
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								Доставка
+							</a>
+						</li>
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								Оплата
+							</a>
+						</li>
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								Онлайн підтримка
+							</a>
+							<!-- </li>
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								Онлайн підтримка
+							</a>
+						</li>
+						<li class="footer__support-item">
+							<a href="" class="footer__support-link link">
+								Контакти
+							</a>
+						</li> -->
+					</ul>
+
+				</div>
+
+				<!-- FOOTER MENU -->
+
+				<div class="footer__menu">
+
+					<h3 class="footer__menu-title">Меню</h3>
+
+					<ul class="footer__menu-list list">
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Головна
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Про нас
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Каталог
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Відгуки
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Блог
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link link">
+								Контакти
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!-- FOOTER MASSAGE -->
+
+				<div class="footer__massage">
+
+					<h3 class="footer__massage-title">Залишити повідомлення</h3>
+
+					<form class="footer__massage-form">
+						<div class="block-input">
+							<label class="footer__massage-label">
+								<input type="text" name="username" class="footer__massage-input" placeholder="Ім'я" />
+							</label>
+							<label class="footer__massage-label">
+								<input type="email" name="email" class="footer__massage-input" placeholder="E-mail" />
+							</label>
+						</div>
+
+						<label class="footer__massage-label_textarea">
+							<textarea name="feedback" rows="5" class="footer__massage-textarea"
+								placeholder="Введіть своє повідомлення тут..."></textarea>
+						</label>
+
+						<button type="submit" class="footer__massage-btn">Відправити</button>
+					</form>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- FOOTER SOCIAL -->
+
+		<div class="footer__social">
+			<ul class="footer__social-list list">
+				<li class="footer__social-item">
+					<a href="https://www.facebook.com/HydrogelCrystalMirror" class="footer__social-link link" target="_blank">
+						<svg class="footer__social-icon facebook">
+							<use href="./images/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="https://www.instagram.com/crystalmirror.top" class="footer__social-link link" target="_blank">
+						<svg class="footer__social-icon instagram">
+							<use href="./images/sprite.svg#icon-instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="https://www.youtube.com/@crystalmirror_top" class="footer__social-link link" target="_blank">
+						<svg class="footer__social-icon youtube">
+							<use href="./images/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="https://telegram.org" class="footer__social-link link" target="_blank">
+						<svg class="footer__social-icon telegram">
+							<use href="./images/sprite.svg#icon-telegram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="https://twitter.com" class="footer__social-link link" target="_blank">
+						<svg class="footer__social-icon twitter">
+							<use href="./images/sprite.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<!-- <li class="footer__social-item">
 						<a href="https://www.pinterest.com" class="footer__social-link link" target="_blank">
 							<svg class="footer__social-icon pinterest">
 								<use href="./images/sprite.svg#icon-pinterest"></use>
@@ -633,12 +828,14 @@
 							</svg>
 						</a>
 					</li> -->
-				</ul>
-				<a href="">
+			</ul>
+			<a href="">
 
-				</a>
-			</div>
+			</a>
 		</div>
+		</div>
+
+		<!-- COPYRIGHT -->
 
 		<div class="copyright">
 			<p>Copyright &#169 2022, CrystalMirror. Всі права захищенні | <a href="./" class="policy link">Політика
