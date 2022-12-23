@@ -119,16 +119,21 @@ iframe {
 
 /* --------------- HEADER --------------- */
 
+.header {
+  border-bottom: 1px solid #dedede87;
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
 }
 
 .header__menu_block-left {
   display: flex;
+  align-items: center;
 }
 
 .header__menu_block-right {
@@ -178,8 +183,8 @@ iframe {
   font-size: 14px;
   color: #606060;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   transition-property: color;
 }
@@ -193,6 +198,8 @@ iframe {
   /* position: relative; */
   font-weight: 400;
   color: var(--accent-color-text);
+
+  border-bottom: 1px solid var(--accent-color);
 }
 
 /* --------------- HERO --------------- */
@@ -232,11 +239,15 @@ h1 {
   margin-bottom: 40px;
 }
 
+.page {
+  color: var(--primary-color-text);
+}
+
 .hero__container-text {
   font-size: 14px;
   font-weight: 200;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
   color: var(--secondary-color-text);
 
   margin-bottom: 50px;
@@ -1083,6 +1094,8 @@ h1 {
 
   padding: 8px 20px;
   margin-left: auto;
+
+  cursor: pointer;
 }
 
 /* ---- footer social ----- */
