@@ -1,6 +1,7 @@
 :root {
   --primary-color-text: #000000;
   --secondary-color-text: #ffffff;
+  --tertiary-color-text: #888888;
   --accent-color-text: #b92669;
 
   --accent-color: #b92669;
@@ -62,8 +63,8 @@ iframe {
 }
 
 .section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .container {
@@ -156,7 +157,7 @@ iframe {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #808080;
+  color: var(--tertiary-color-text);
   padding: 2px 0;
 }
 
@@ -181,7 +182,7 @@ iframe {
   display: block;
 
   font-size: 14px;
-  color: #606060;
+  color: var(--tertiary-color-text);
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -400,7 +401,7 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.01em;
 
-  color: #909090;
+  color: var(--tertiary-color-text);
 
   margin-bottom: 15px;
 }
@@ -811,7 +812,7 @@ h1 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.02em;
-  color: #888888;
+  color: var(--tertiary-color-text);
 }
 
 .name-star__container {
@@ -862,7 +863,7 @@ h1 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.02em;
-  color: #888888;
+  color: var(--tertiary-color-text);
   margin-bottom: 10px;
 }
 
@@ -1139,7 +1140,7 @@ h1 {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: #888888;
+  color: var(--tertiary-color-text);
 
   text-align: center;
   background-color: var(--primary-background-color);
@@ -1150,4 +1151,49 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--accent-color-text);
+}
+
+/* ======================================== */
+
+/* --- PAGE DELIVERY --- */
+
+.delivery {
+  font-size: 16px;
+}
+
+.delivery__block {
+  padding: 0 15px;
+}
+
+.delivery__promotion {
+  background-color: #72bd6ac1;
+
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--secondary-color-text);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 15px 0;
+  margin-bottom: 40px;
+}
+
+.delivery__text {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.delivery__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.delivery__item_title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.delivery__item_icon {
+  margin-bottom: 10px;
 }
